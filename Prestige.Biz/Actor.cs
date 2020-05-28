@@ -8,10 +8,19 @@ namespace Prestige.Biz
 {
     public class Actor
     {
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
         public Actor()
         {
             Console.WriteLine("An actor is born.");
         }
+
+        /// <summary>
+        /// Parameterized Constructor that retrieves properties and
+        /// executews the default constructor
+        /// </summary>
+        /// <param name="actorName"></param>
         public Actor(string actorName): this()
         {
             ActorName = actorName;
